@@ -52,7 +52,7 @@ Attach the network to the router:
 openstack router add subnet kubernetes kubernetes
 ```
 
-Attack the router to the external network (assuming the external network is named $OS_EXT_NET_NAME:
+Attach the router to the external network (assuming the external network is named $OS_EXT_NET_NAME:
 
 ```
 openstack router set --external-gateway $(openstack network show $OS_EXT_NET_NAME -f value -c id) kubernetes
